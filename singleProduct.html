@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <!-- styleSheet Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <!-- Font Awsome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- Animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- css link -->
+    <link href="/style.css" rel="styleSheet">
+    <style>
+        .small-img-group {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .small-img-col {
+            flex-basis: 24%;
+            cursor: pointer;
+        }
+        
+        .button-s {
+            font-size: 0.8rem;
+            font-weight: 700;
+            outline: none;
+            border: none;
+            background-color: green;
+            color: aliceblue;
+            padding: 13px 30px;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: 0.3s ease;
+        }
+        
+        .button-s:hover {
+            background-color: #1b063b;
+        }
+        
+        .sproduct select {
+            display: block;
+            padding: 5px 10px;
+        }
+        
+        .sproduct input {
+            width: 50px;
+            height: 40px;
+            padding-left: 10px;
+            font-size: 16;
+            margin-right: 10px;
+        }
+        
+        .sproduct input:focus {
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Nav Bar -->
+    <nav id="nav-bar" class="navbar navbar-expand-lg navbar-light bg-white py-1 fixed-top">
+        <div class="container">
+            <!-- Logo -->
+            <img src="image/Logo 1.jpeg" style="max-width:5%;" alt="">
+            <h4 class="logo m-lg-3"> Rufar</h4>
+            <button id="bar" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span<i id="bar" class="fas fa-bars"></i></span>
+      </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <!-- home -->
+                    <li class="nav-item">
+                        <a id="nav-li" class="nav-link active" style="padding: 0 20px;" aria-current="page" href="/index.html">Home</a>
+                    </li>
+                    <!-- Shop -->
+                    <li class="nav-item">
+                        <a id="nav-li" class="nav-link active" style="padding: 0 20px;" aria-current="page" href="/shop.html">Shop</a>
+                    </li>
+                    <!-- Profile -->
+                    <li class="nav-item">
+                        <a id="nav-li" class="nav-link active" style="padding: 0 20px;" aria-current="page" href="#">Profile</a>
+                    </li>
+                    <!-- login -->
+                    <li class="nav-item">
+                        <a id="nav-li" class="nav-link active" style="padding: 0 20px;" aria-current="page" href="/login.html">login</a>
+                    </li>
+                    <!-- font Aww -->
+                    <li class="nav-item">
+                        <i id="nav-li" class="fas fa-search" style=" padding: 0 20px;"></i>
+                        <i id="nav-li" class="fas fa-shopping-bag " style=" padding: 0 20px;"></i>
+                    </li>
+
+            </div>
+        </div>
+    </nav>
+
+    <section class="container my-5 pt-5 sproduct">
+        <!-- img -->
+        <div class="row mt-5">
+            <div class="col-lg-5 col-md-12 col-12">
+                <img class="img-fluid w-100" src="/singleProduct_image/S_TOP.jpeg" alt="" id="mainImg">
+
+                <div class="small-img-group">
+                    <div class="small-img-col">
+                        <img src="/singleProduct_image/S_1.jpeg" width="100%" class="small-img" alt="">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="/singleProduct_image/S_2.jpeg" width="100%" class="small-img" alt="">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="/singleProduct_image/S-3.jpeg" width="100%" class="small-img" alt="">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="/singleProduct_image/S_4.jpeg" width="100%" class="small-img" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- text -->
+            <div class="col-lg-6 col-md-12 col-12">
+                <h6>DSLR</h6>
+                <h3 class="py-4">Canon EOS M50 Mark</h3>
+                <h2>$2899.00</h2>
+                <select class="my-3">
+                    <option>lens Size</option>
+                    <option>24.1 megapixel</option>
+                    <option>32.5 megapixel</option>
+                    <option>18 megapixel</option>
+                    <option>16 megapixel</option>
+                </select>
+                <input type="number" value="1">
+                <button id="button">Add card</button>
+                <button class="button-s row mt-2 ml-1">Buy now</button>
+                <h4 class="mb-3 mt-3">Product Details</h4>
+                <span>The M50 Mark II has a 3.5mm external microphone input is included so you can connect a range of external microphones, such as the extremely popular Rode and Deity mini shotgun mics or the Rode wireless lavalier mics. ... That way the audio I record is much better than if I left the mic on the camera.</span>
+            </div>
+        </div>
+    </section>
+    <section id="featured" class="my-5 py-5">
+        <div class="container mt-5 py-5 text-center">
+            <h2 class="animate__animated animate__wobble">More Product</h2>
+            <hr class="mx-auto">
+            <p class="animate__animated animate__heartBeat text-center">Here you can check our <span id="spn-rat">More PRODUCTS</span> with fair price at a 5 rating on Rufar </p>
+        </div>
+        <!-- 1 Row -->
+        <div class="mx-auto container mt-4 mb-5">
+            <div class="row">
+                <!-- product-1 -->
+                <div id="product">
+                    <img id="fea-img" src="/imageShop/headset_1.jpg" alt="">
+                    <div id="star" class="pl-5 mt-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h5 class="pl-5">iheadset c45</h5>
+                    <h4 class="pl-5">$973.00</h4>
+                    <button id="btn-fea" class="buy-btn">Buy Now</button>
+                </div>
+                <!-- product-2 -->
+                <div id="product">
+                    <img id="fea-img" src="/imageShop/headset_2.jpg" alt="">
+                    <div id="star" class="pl-5">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h5 class="pl-5">Zebronic</h5>
+                    <h4 class="pl-5">$659.09</h4>
+                    <button id="btn-fea" class="buy-btn">Buy Now</button>
+                </div>
+                <!-- product-3 -->
+                <div id="product">
+                    <img id="fea-img" src="/imageShop/headset_3.jpg" alt="">
+                    <div id="star" class="pl-5">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h5 class="pl-5">Boat cr7</h5>
+                    <h4 class="pl-5">$299.00</h4>
+                    <button id="btn-fea" class="buy-btn">Buy Now</button>
+                </div>
+                <!-- product-4 -->
+                <div id="product">
+                    <img id="fea-img" src="/imageShop/headset_4.jpg" alt="">
+                    <div id="star" class="pl-5">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h5 class="pl-5">Sklecam</h5>
+                    <h4 class="pl-5">$219.00</h4>
+                    <button id="btn-fea" class="buy-btn">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <!-- FOOTER -->
+        <footer class="mt-5 py-5">
+            <div class="row container mx-auto pt-5">
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="row">
+                        <img src="/image/Logo 1.jpeg" class="mb-2" style="width: 40px;" alt="">
+                        <h2 class="ml-3">Rufar</h2>
+                    </div>
+                    <p>Gadgets Now is the technology destination of the globe's most-read website --- The Times of India. We cover everything and anything technology</p>
+                    <p>CE0~MOHAMMED FAREESTHA</p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <h5>Featured</h5>
+                    <ul class="text-uppercase">
+                        <li><a href="#">Apple AirPods</a></li>
+                        <li><a href="#">Astro Household</a></li>
+                        <li><a href="#">Nook Casa</a></li>
+                        <li><a href="#">Laptops</a></li>
+                        <li><a href="#">Phones</a></li>
+                        <li><a href="#">Headsets</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <h4 class="pb-2">Contact Us</h4>
+                    <div>
+                        <h6 class="text-uppercase">Address</h6>
+                        <p>123 STREET NAME, CITY, USA</p>
+                    </div>
+                    <div>
+                        <h6 class="text-uppercase">Tel-Phone</h6>
+                        <p>(123) 456-9162</p>
+                    </div>
+                    <div>
+                        <h6 class="text-uppercase">Email</h6>
+                        <p>rukfar@gmail.com</p>
+                    </div>
+                </div>
+                <!-- pppppppppppp -->
+                <div class="mt-5">
+                    <div class="row container mx-auto">
+                        <div class="col-lg-3 col-md-6 col-12">
+                            <img class=" w-50" src="/image/payment.png" alt="">
+                        </div>
+                        <div id="copyright" class="col-lg-4 col-md-6 col-12 text-nowrap">
+                            <p>Rufar eCommerce <i class="far fa-copyright"></i> 2023. All Rights Reserved </p>
+                        </div>
+                        <div id="fb" class="col-lg-4 col-md-6 col-12">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <!-- Script -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js " integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB " crossorigin="anonymous "></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js " integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13 " crossorigin="anonymous "></script>
+
+        <!-- Script -->
+        <script>
+            var mainImg = document.getElementById('mainImg')
+            var smallImg = document.getElementsByClassName('small-img')
+
+            smallImg[0].onclick = function() {
+                mainImg.src = smallImg[0].src;
+            }
+            smallImg[1].onclick = function() {
+                mainImg.src = smallImg[1].src;
+            }
+            smallImg[2].onclick = function() {
+                mainImg.src = smallImg[2].src;
+            }
+            smallImg[3].onclick = function() {
+                mainImg.src = smallImg[3].src;
+            }
+        </script>
+
+
+</body>
+
+</html>

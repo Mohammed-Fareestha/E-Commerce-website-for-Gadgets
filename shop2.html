@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <!-- styleSheet Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <!-- Font Awsome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- Animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- css link -->
+    <link href="/style.css" rel="styleSheet">
+
+    <style>
+        body>nav:nth-child(3)>ul>li.page-item.active>a {
+            background-color: black;
+        }
+        
+        body>nav:nth-child(3)>ul>li:nth-child(n):hover>a {
+            background-color: #8190d4;
+            color: aliceblue;
+        }
+        
+        .pagination a {
+            color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Nav Bar -->
+    <nav id="nav-bar" class="navbar navbar-expand-lg navbar-light bg-white py-1 fixed-top">
+        <div class="container">
+            <!-- Logo -->
+            <img src="image/Logo 1.jpeg" style="max-width:5%;" alt="">
+            <h4 class="logo m-lg-3"> Rufar</h4>
+            <button id="bar" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span<i id="bar" class="fas fa-bars"></i></span>
+      </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <!-- home -->
+                    <li class="nav-item">
+                        <a id="nav-li" class="nav-link " style="padding: 0 20px;" aria-current="page" href="/index.html">Home</a>
+                    </li>
+                    <!-- Shop -->
+                    <li class="nav-item">
+                        <a id="nav-li" class="nav-link active" style="padding: 0 20px;" aria-current="page" href="/shop.html">Shop</a>
+                    </li>
+                    <!-- Profile -->
+                    <li class="nav-item">
+                        <a id="nav-li" class="nav-link" style="padding: 0 20px;" aria-current="page" href="#">Profile</a>
+                    </li>
+                    <!-- login -->
+                    <li class="nav-item">
+                        <a id="nav-li" class="nav-link" style="padding: 0 20px;" aria-current="page" href="/login.html">login</a>
+                    </li>
+                    <!-- font Aww -->
+                    <li class="nav-item">
+                        <i id="nav-li" class="fas fa-search" style=" padding: 0 20px;"></i>
+                        <i id="nav-li" class="fas fa-shopping-bag " style=" padding: 0 20px;"></i>
+                    </li>
+
+            </div>
+        </div>
+    </nav>
+
+    <section id="featured" class="my-5 py-5">
+        <div class="container mt-5 py-5">
+            <h2 class="animate__animated animate__wobble">Our Featured</h2>
+            <hr>
+            <p class="animate__animated animate__heartBeat">Here you can check our <span id="spn-rat">NEW PRODUCTS</span> with fair price at a 5 rating on Rufar </p>
+        </div>
+        <!-- 1 row -->
+        <div class="mx-auto container">
+            <div class="row">
+                <!-- product-1 -->
+                <div onclick="window.location.href='singleProduct.html';" id="product">
+                    <img id="fea-img" src="/imageShop/cam_1.jpg" alt="">
+                    <div id="star" class="pl-5">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h5 class="pl-5">Sony Cameras DLSR Sensors</h5>
+                    <h4 class="pl-5">$1173.00</h4>
+                    <button id="btn-fea" class="buy-btn">Buy Now</button>
+                </div>
+                <!-- product-2 -->
+                <div id="product">
+                    <img id="fea-img" src="/imageShop/cam_2.webp" alt="">
+                    <div id="star" class="pl-5">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h5 class="pl-5">info92 pro</h5>
+                    <h4 class="pl-5">$1729.09</h4>
+                    <button id="btn-fea" class="buy-btn">Buy Now</button>
+                </div>
+                <!-- product-3 -->
+                <div id="product">
+                    <img id="fea-img" src="/imageShop/cam_3.jpg" alt="">
+                    <div id="star" class="pl-5">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h5 class="pl-5">Nikon mort-93</h5>
+                    <h4 class="pl-5">$1199.00</h4>
+                    <button id="btn-fea" class="buy-btn">Buy Now</button>
+                </div>
+                <!-- product-4 -->
+                <div id="product">
+                    <img id="fea-img" src="/imageShop/cam_4.jpg" alt="">
+                    <div id="star" class="pl-5 mt-5">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h5 class="pl-5">Qapa c45 6000D</h5>
+                    <h4 class="pl-5">$1919.00</h4>
+                    <button id="btn-fea" class="buy-btn">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <!-- 2 row -->
+        <div class="mx-auto container">
+            <div class="row">
+                <!-- product-1 -->
+                <div id="product">
+                    <img id="fea-img" src="/imageShop/phnS_1.jpg" alt="">
+                    <div id="star" class="pl-5">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h5 class="pl-5">Iphone 13 pro max</h5>
+                    <h4 class="pl-5">$973.00</h4>
+                    <button id="btn-fea" class="buy-btn">Buy Now</button>
+                </div>
+                <!-- product-2 -->
+                <div id="product">
+                    <img id="fea-img" src="/imageShop/phnS_2.png" alt="">
+                    <div id="star" class="pl-5">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h5 class="pl-5">Iphone xs max</h5>
+                    <h4 class="pl-5">$429.09</h4>
+                    <button id="btn-fea" class="buy-btn">Buy Now</button>
+                </div>
+                <!-- product-3 -->
+                <div id="product">
+                    <img class="" id="fea-img" src="/imageShop/phnS_3.png" alt="">
+                    <div id="starr3" class="pl-5">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h5 class="pl-5">One plus 7 pro</h5>
+                    <h4 class="pl-5">$299.00</h4>
+                    <button id="btn-fea" class="buy-btn">Buy Now</button>
+                </div>
+                <!-- product-4 -->
+                <div id="product">
+                    <img id="fea-img" src="/imageShop/phnS_4.jpg" alt="">
+                    <div id="star" class="pl-5 mt-0">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h5 class="pl-5">Samsung w-87</h5>
+                    <h4 class="pl-5">$519.00</h4>
+                    <button id="btn-fea" class="buy-btn">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEXT BUTTON  -->
+    <nav aria-label="...">
+        <ul class="pagination mt-5 container" id="pagination">
+            <li class="page-item">
+                <a class="page-link" href="/shop.html">Previous</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="/shop.html">1</a></li>
+            <li class="page-item active" aria-current="page">
+                <a class="page-link" href="#">2</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- FOOTER -->
+    <footer class="mt-5 py-5">
+        <div class="row container mx-auto pt-5">
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="row">
+                    <img src="/image/Logo 1.jpeg" class="mb-2" style="width: 40px;" alt="">
+                    <h2 class="ml-3">Rufar</h2>
+                </div>
+                <p>Gadgets Now is the technology destination of the globe's most-read website --- The Times of India. We cover everything and anything technology</p>
+                <p>CE0~MOHAMMED FAREESTHA</p>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <h5>Featured</h5>
+                <ul class="text-uppercase">
+                    <li><a href="#">Apple AirPods</a></li>
+                    <li><a href="#">Astro Household</a></li>
+                    <li><a href="#">Nook Casa</a></li>
+                    <li><a href="#">Laptops</a></li>
+                    <li><a href="#">Phones</a></li>
+                    <li><a href="#">Headsets</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <h4 class="pb-2">Contact Us</h4>
+                <div>
+                    <h6 class="text-uppercase">Address</h6>
+                    <p>123 STREET NAME, CITY, USA</p>
+                </div>
+                <div>
+                    <h6 class="text-uppercase">Tel-Phone</h6>
+                    <p>(123) 456-9162</p>
+                </div>
+                <div>
+                    <h6 class="text-uppercase">Email</h6>
+                    <p>rukfar@gmail.com</p>
+                </div>
+            </div>
+            <!-- pppppppppppp -->
+            <div class="mt-5">
+                <div class="row container mx-auto">
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <img class=" w-50" src="/image/payment.png" alt="">
+                    </div>
+                    <div id="copyright" class="col-lg-4 col-md-6 col-12 text-nowrap">
+                        <p>Rufar eCommerce <i class="far fa-copyright"></i> 2023. All Rights Reserved </p>
+                    </div>
+                    <div id="fb" class="col-lg-4 col-md-6 col-12">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Script -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js " integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js " integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13 " crossorigin="anonymous "></script>
+</body>
+
+</html>
